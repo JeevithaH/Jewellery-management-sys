@@ -9,7 +9,7 @@
               <th scope="col" class="table-info">dis</th>
               <th scope="col" class="table-info">mrp</th>
               <th scope="col" class="table-info">cat_id</th>
-              <th scope="col" class="table-info">details</th>
+              <th scope="col" class="table-info" width="30%">details</th>
               <th scope="col" class="table-info">Action</th>
             </tr>
           </thead>

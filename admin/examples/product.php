@@ -98,7 +98,7 @@
               <textarea class="form-control" placeholder="details" id="details"></textarea>
             </div>
             <p id="ld">loading...</p>
-            <input type="button" value="Create category" name="submit" id="submit" class="btn btn-primary">
+            <input type="button" value="Create Product" name="submit" id="submit" class="btn btn-primary">
           </form>
         </div>
       </div>

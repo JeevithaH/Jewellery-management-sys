@@ -38,12 +38,10 @@
                 <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link">Home
 
                     </a></li>
-                <li class="nav-item custom-nav-item"><a href="shop.php" class="nav-link">shop</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Orders</a></li>
+                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Orders</a></li>  
+                <li class="nav-item custom-nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
                 <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#cusloginModalCen">Login</a></li>
                 <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#cusregModalCen">Signup</a></li>
-                <li class="nav-item custom-nav-item"><a href="paymentStatus.php" class="nav-link">Payment</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Contact</a></li>
                 <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Logout</a></li>
 
             </ul>

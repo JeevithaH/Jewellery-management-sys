@@ -17,7 +17,7 @@ include("./mainInclude/header.php");
                 <small class="my-content">
                     <h6>Stay magical</h6>
                 </small><br>
-                <a href="#" class="btn"data-bs-toggle="modal" data-bs-target="#cusregModalCen">SHOP NOW</a>
+                <a href="#new" class="btn">SHOP NOW</a>
                  <!-- Button trigger modal -->
 
 
@@ -47,65 +47,46 @@ include("./mainInclude/header.php");
         <!--end text Banner-->
         <!-- ------------------------------------------------------------------------------------ -->
         <!-- GOLD-->
-        <div class="container mt-5">
+        <div class="container mt-5" id="new">
             <h1 class="text-center">New collections</h1>
+            <h4 class="card-title">Turn Moments into Memories</h4>
             <!--start new design 1st Card Deck-->
-            <div class="card-deck mt-4">
-
-                <div class="card">
-                    <h4>Turn Moments into Memories</h4>
-                    <img src="images/gold_sel.jpg" class="image" alt="Gold" />
-                    <div class="card-body">
-
-                        <a class="btn btn-primary text-white 
-                    font-weight-border float-right" href="gold.php">BUY GOLD</a>
-
+            <div class="card-deck row mt-4">
+            <?php
+            require "./config/pdoconfig.php";
+            $query = "SELECT * FROM category";
+            $statement = $connection->prepare($query);
+            $statement->execute();
+            $result = $statement->fetchAll();
+            if($result > 0){
+                foreach($result as $row){
+                    echo '
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="card">
+                    <img src="./admin/php/uploads-category/'.$row['image'].'" class="card-img-top p-3" height="350px"  alt="'.$row['name'].'" />
+                       <div class="card-body">
+                       <div class="col-6">
+                       <h4>'.$row['name'].'</h4>
+                       </div>
+                            
+                            <a class="btn btn-primary text-white 
+                        font-weight-border float-right" href="gold.php?id='.$row['id'].'">BUY</a>
+    
+                        </div>
+             </div>
                     </div>
-
-                </div>
-
-            </div>
-            <!--Gold--->
-
-            <!-- ------------------------------------------------------------------------------------ -->
-
-            <!-- Silver-->
-
-            <!--start new design 1st Card Deck-->
-            <div class="card-deck mt-4">
-
-                <div class="card">
-                    <img src="images/silver_sel.jpg" class="image" alt="Silver" />
-                    <div class="card-body">
-
-                        <a class="btn btn-primary text-white 
-                    font-weight-border float-right" href="gold.php">BUY SILVER</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!--Silver--->
-
-            <!-- ------------------------------------------------------------------------------------ -->
-            <!--diamond-->
-
-            <!--start new design 1st Card Deck-->
-            <div class="card-deck mt-4">
-
-                <div class="card">
-                    <img src="images/diamond_sel.jpg" class="image" alt="diamond" />
-                    <div class="card-body">
-
-                        <a class="btn btn-primary text-white 
-                    font-weight-border float-right" href="gold.php">BUY DIAMOND</a>
-                    </div>
-
-
-                </div>
-
-            </div>
+             
+                    ';
+                }
+                
+            }
+            else{
+                echo '<div class="alert alert-warning">Categories will be added soon</div>';
+            }
+            ?>
+              </div>
+           
             <!--end diamond--->
 
            <!--start contact us-->
