@@ -83,6 +83,7 @@ a.social-hover:hover{
 }
 
 
+
 .stripe{
     background-image: linear-gradient(240deg,#b97285 , #724752 );
     padding :3rem;
@@ -93,12 +94,7 @@ a.social-hover:hover{
 }  
 
 
-.card-img-top
-{
-    display:flex;
-    flex-wrap:wrap;
-    padding:50px opx 30px 0px;
-}
+.card{padding: auto;}
 .image{
     width: auto;
     height: auto;

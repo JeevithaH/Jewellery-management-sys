@@ -18,6 +18,9 @@
 </head>
 
 <body>
+<?php
+include("./mainInclude/header.php");
+?>
     <div class="card-deck mt-4">
         <div class="card">
             <img src="./images/gold_sel.jpg" class="image" alt="Gold" />
