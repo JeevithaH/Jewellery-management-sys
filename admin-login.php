@@ -63,6 +63,8 @@ if (isset($_POST['submit'])) {
 		      	<form method="POST" class="signin-form">
 		      		<div class="form-group">
 		      			<input type="email" class="form-control" placeholder="Email" name="email" required>
+						<input type="email" class="form-control" placeholder="Email" name="email" required>
+						
 		      		</div>
 	            <div class="form-group">
 	              <input id="password-field" type="password" class="form-control" name="password" placeholder="Password" required>
